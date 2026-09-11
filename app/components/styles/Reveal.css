@@ -1,0 +1,130 @@
+.reveal {
+  opacity: 0;
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+.reveal-slide {
+  transition-duration: 1s;
+}
+.reveal-soft {
+  transition-duration: 1.15s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal-slide.reveal-left {
+  transform: translate3d(-64px, 0, 0);
+}
+.reveal-slide.reveal-right {
+  transform: translate3d(64px, 0, 0);
+}
+.reveal-slide.reveal-up {
+  transform: translate3d(0, 42px, 0);
+}
+.reveal-up {
+  transform: translate3d(0, 22px, 0);
+}
+.reveal-left {
+  transform: translate3d(-28px, 0, 0);
+}
+.reveal-right {
+  transform: translate3d(28px, 0, 0);
+}
+.reveal-scale {
+  transform: scale(0.96);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+.hero-art .reveal {
+  transform: translate3d(40px, 0, 0);
+}
+.hero-art .reveal.is-visible {
+  transform: translate3d(0, 0, 0);
+}
+.service-card:nth-child(odd) {
+  transition-delay: 0ms;
+}
+.service-card:nth-child(even) {
+  transition-delay: 70ms;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+@keyframes gradientMove {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+@keyframes orbDrift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-18px, 14px, 0) scale(1.06);
+  }
+}
+@keyframes orbPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.06);
+    opacity: 0.65;
+  }
+}
+@keyframes gridDrift {
+  0%,
+  100% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 24px -16px;
+  }
+}
+.hero-person img {
+  animation: float 7s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+.balance-chip {
+  animation: float 6s ease-in-out infinite -1.5s;
+}
+.trust-badge {
+  animation: float 6.5s ease-in-out infinite -2s;
+}
+.feature-row .icon-circle,
+.service-icon {
+  will-change: transform;
+}
+.feature-row:hover .icon-circle {
+  transform: rotate(-6deg) scale(1.08);
+}
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border-color: #d5c2f2;
+}
+.footer-bottom button {
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    color 0.3s ease;
+}
+.footer-bottom button:hover {
+  transform: translateY(-3px);
+  color: white;
+  background: var(--primary);
+}

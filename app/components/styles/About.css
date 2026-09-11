@@ -1,0 +1,139 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 70px;
+}
+.about-visual {
+  position: relative;
+  min-height: 390px;
+}
+.about-frame {
+  width: 77%;
+  height: 360px;
+  margin-left: 13%;
+  overflow: hidden;
+  border-radius: 120px 120px 30px 30px;
+  background: var(--lavender);
+}
+.about-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.5s;
+}
+.about-frame:hover img {
+  transform: scale(1.03);
+}
+.mini-photo {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 22px;
+  width: 42%;
+  height: 156px;
+  padding: 6px;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 0 16px 35px rgba(44, 24, 80, 0.18);
+  overflow: hidden;
+}
+.mini-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 24px;
+}
+.trust-badge {
+  position: absolute;
+  z-index: 3;
+  left: 38%;
+  bottom: -13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  color: white;
+  background: linear-gradient(135deg, var(--purple-deep), var(--purple-bright));
+  box-shadow: 0 11px 25px rgba(112, 64, 216, 0.3);
+}
+.trust-badge strong {
+  font-size: 20px;
+}
+.trust-badge sup,
+.stat-number sup {
+  color: #ad79f5;
+  font-size: 0.55em;
+}
+.trust-badge span {
+  font-size: 9px;
+  opacity: 0.85;
+}
+.about-copy > p {
+  max-width: 470px;
+  margin: 20px 0 24px;
+  font-size: 13px;
+}
+.feature-list {
+  display: grid;
+  gap: 16px;
+}
+.feature-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: 0.3s ease;
+}
+.feature-row:hover {
+  transform: translateX(6px);
+}
+.icon-circle,
+.service-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  color: white;
+  background: linear-gradient(135deg, var(--primary), var(--purple-bright));
+}
+.feature-row h3 {
+  font-size: 14px;
+}
+.feature-row p {
+  margin: 3px 0 0;
+  font-size: 10px;
+  line-height: 1.4;
+}
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-top: 25px;
+  padding-bottom: 105px;
+}
+.stat {
+  text-align: center;
+}
+.stat-number {
+  color: var(--foreground);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.07em;
+}
+.stat-number sup {
+  margin-left: 3px;
+}
+.stat > span {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted-foreground);
+  font-size: 10px;
+}
