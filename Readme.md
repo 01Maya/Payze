@@ -1,2 +1,2 @@
-# 💜 Payze — Payment Gateway Landing Page
+# 💜 Payze — Payment Gateway Landing Page ✨
 
