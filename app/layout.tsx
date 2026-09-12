@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   title: "Payze — Payments made beautifully simple",
   description:
     "A premium online payment platform for sending, receiving, and managing money with confidence.",
-  generator: "v0.app",
   icons: {
     icon: [
       {
