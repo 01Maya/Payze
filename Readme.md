@@ -5,6 +5,8 @@
 Payze is a modern fintech landing page designed to present secure, simple, and convenient online payment services.  
 The interface combines a clean white layout, vibrant purple accents, rounded cards, and polished interactive experiences.
 
+---
+
 ## 📝 Description
 
 The website introduces Payze's payment platform through a conversion-focused homepage with clear messaging and strong calls to action.  
